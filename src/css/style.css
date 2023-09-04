@@ -506,7 +506,7 @@ ol {
 -----------------------*/
 
 .banner {
-	height: 500px;
+	height: 400px;
 }
 
 .banner__text span {
@@ -544,13 +544,13 @@ ol {
 
 .banner__slider {
 	text-align: center;
-	padding: 150px 0 0;
+	padding: 90px 0 0;
 }
 
 .banner__slider.owl-carousel .owl-dots {
 	position: absolute;
 	left: 0;
-	top: 430px;
+	top: 330px;
 	width: 100%;
 	text-align: center;
 }
