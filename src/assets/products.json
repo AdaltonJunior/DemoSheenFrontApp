@@ -1,0 +1,9 @@
+[
+    {
+        "type" : ["mix", "women"],
+        "img" : "img/product/product-1.jpg",
+        "description": "Buttons tweed blazer",
+        "rating": 5,
+        "price": 59.2
+    }
+]
