@@ -1,9 +1,13 @@
-<div class="{{product.type}}">
-    <div class="product__item">
+<div>
+    <div class="product__item" [ngClass]="product.oldPrice ? 'sale': ''">
         <div class="product__item__pic set-bg"
             [attr.data-setbg]="product.img"
             style="background-image: url(&quot;{{product.img}}&quot;);">
-            <div class="label new">New</div>
+           
+            <div class="label new" *ngIf="product.isNew">New</div>
+            <div class="label stockout" *ngIf="product.isOutOfStock">out of stock</div>
+            <div class="label sale" *ngIf="product.isSale">Sale</div>
+
             <ul class="product__hover">
                 <li><a href="{{product.img}}" class="image-popup"><span
                         class="arrow_expand"></span></a></li>
@@ -15,10 +19,10 @@
             <h6>
                 <a href="#">{{product.description}}</a>
             </h6>
-            <div class="rating">
-                <i class="fa fa-star" *ngFor="let _ of [].constructor(product.rating)"></i>
-            </div>
-            <div class="product__price">$ {{product.price}}</div>
+            <span class="rating" *ngFor="let _ of [].constructor(product.rating)">
+                <i class="fa fa-star"></i>
+            </span>
+            <div class="product__price">{{product.price | currency:'$ ':'symbol':'0.1-5'}} <span *ngIf="product.oldPrice">{{product.oldPrice | currency:'$ ':'symbol':'0.1-5'}}</span></div>
         </div>
     </div>
 </div>

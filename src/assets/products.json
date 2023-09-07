@@ -1,9 +1,64 @@
 [
     {
-        "type" : ["mix", "women"],
+        "isNew" : true,
+        "type" : ["women"],
         "img" : "img/product/product-1.jpg",
         "description": "Buttons tweed blazer",
         "rating": 5,
-        "price": 59.2
+        "price": 59
+    },
+    {
+        "type" : ["men"],
+        "img" : "img/product/product-2.jpg",
+        "description": "Flowy striped skirt",
+        "rating": 5,
+        "price": 49.0
+    },
+    {
+        "isOutOfStock": true,
+        "type" : ["accessories"],
+        "img" : "img/product/product-3.jpg",
+        "description": "Cotton T-Shirt",
+        "rating": 5,
+        "price": 59.0
+    },
+    {
+        "type" : ["cosmetic"],
+        "img" : "img/product/product-4.jpg",
+        "description": "Slim striped pocket shirt",
+        "rating": 5,
+        "price": 59.0
+    },
+    {
+        "type" : ["kid"],
+        "img" : "img/product/product-5.jpg",
+        "description": "Fit micro corduroy shirt",
+        "rating": 5,
+        "price": 59.0
+    },
+    {
+        "isSale" : true,
+        "type" : ["women", "kid", "accessories", "cosmetic"],
+        "img" : "img/product/product-6.jpg",
+        "description": "Tropical Kimono",
+        "rating": 5,
+        "price": 49,
+        "oldPrice": 59
+    },
+    {
+        "type" : ["women", "accessories", "cosmetic"],
+        "img" : "img/product/product-7.jpg",
+        "description": "Contrasting sunglasses",
+        "rating": 5,
+        "price": 59
+    },
+    {
+        "isSale" : true,
+        "type" : ["men", "accessories", "cosmetic"],
+        "img" : "img/product/product-8.jpg",
+        "description": "Water resistant backpack",
+        "rating": 5,
+        "price": 49,
+        "oldPrice": 59
     }
 ]

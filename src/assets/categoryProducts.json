@@ -1,0 +1,7 @@
+[
+    {"category": "women", "description": "Women’s"},
+    {"category": "men", "description": "Men’s"},
+    {"category": "kid", "description": "Kid’s"},
+    {"category": "accessories", "description": "Accessories"},
+    {"category": "cosmetic", "description": "Cosmetics"}
+]
