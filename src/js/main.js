@@ -22,7 +22,7 @@ Created: Colorib
 
 console.log('Funções Banner Carregadas!');
 function initBannerFunctions(){
-    $(window).on('load', function () {
+    $(function () {
         console.log('Funções Banner Executadas!');
 
         /*------------------

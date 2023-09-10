@@ -1,5 +1,6 @@
 export interface Produc {
 
+    id?: number,
     type? : string[],
     img? : string,
     description? : string,

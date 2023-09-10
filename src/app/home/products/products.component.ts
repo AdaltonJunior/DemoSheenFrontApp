@@ -29,7 +29,6 @@ export class ProductsComponent implements AfterViewInit {
     await this.http.get<Produc[]>("assets/categoryProducts.json").subscribe(r => this.categoryes = r);
     await this.http.get<Produc[]>("http://localhost:8080/products/").subscribe(r => this.itens = r);
     //*******************************************************************************************/
-
   }
 
 }

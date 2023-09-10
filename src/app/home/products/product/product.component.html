@@ -1,7 +1,10 @@
 <div>
+    <!-- (click)="openProducDetais(product.id)" -->
     <div class="product__item" [ngClass]="product.oldPrice ? 'sale': ''">
         <div class="product__item__pic set-bg"
             [attr.data-setbg]="product.img"
+            (click)="openProducDetais(product)"
+            [routerLink]="['../product-detail/', product.id]"
             style="background-image: url(&quot;{{product.img}}&quot;);">
            
             <div class="label new" *ngIf="product.isNew">New</div>

@@ -10,4 +10,8 @@ export class ProductComponent {
   
   @Input() product: Produc = {};
 
+  openProducDetais(product : Produc){
+    console.log('Call Product: ' + product.id);
+  }
+
 }
